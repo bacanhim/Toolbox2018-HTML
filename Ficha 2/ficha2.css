@@ -1,0 +1,68 @@
+.flexwrapper {
+    background-color: indigo;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexItems {
+    display: flex;
+    align-items: center;
+    min-height: 6.25rem;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .flexwrapper {
+        flex-flow: row wrap;
+        height: 97vh;
+    }
+
+    header {
+        width: 100%;
+        background-color: #105B63;
+        order: -1;
+    }
+
+    nav {
+        width: 100%;
+        order: 2;
+        background-color: rgb(255, 240, 145);
+    }
+
+    .foco {
+        width: 100%;
+        order: 3;
+        background-color: #BD4932;
+    }
+
+    .agenda {
+        flex: 1;
+        order: 5;
+        background-color: #FFD34E;
+    }
+
+    .ultimas {
+        flex: 2;
+        order: 4;
+        background-color: #DB9E36;
+    }
+
+    .links {
+        width: 200px;
+        order: 6;
+        background-color: #DB9E36;
+    }
+
+    footer {
+        width: 100%;
+        order: 7;
+        background-color: #BD4932;
+    }
+}
+
+@media (min-width: 600px) {
+    .flexwrapper {
+        flex-flow: row wrap;
+        height: 97vh;
+    }
+}

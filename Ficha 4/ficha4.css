@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+}
+.column{
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+}
+.flex-column{
+    -webkit-flex:1;
+    flex:1;
+}
+nav {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+section {
+    margin-left: 200px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+}
+body{
+    margin-bottom: 120px;
+}
+@media screen and (min-width:600px){
+    nav{
+        float: left;
+        width: 25%;
+    }
+    section{
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width:599px){
+    nav li {
+        display: inline;
+    }
+}
